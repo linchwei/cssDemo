@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.point-burst-8 {
+			position: relative;
+			width: 80px;
+			height: 80px;
+			background: red;
+			text-align: center;
+			transform: rotate(20deg);
+		}
+		.point-burst-8:before {
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 80px;
+			height: 80px;
+			background: red;
+			transform: rotate(135deg);
+			content: "";
+		}
+	</style>
+</head>
+<body>
+	<div class="point-burst-8"></div>
+</body>
+</html>

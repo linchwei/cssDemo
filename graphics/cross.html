@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.cross {
+			position: relative;
+			width: 20px;
+			height: 100px;
+			background: red;
+		}
+		.cross:after {
+			position: absolute;
+			left: -40px;
+			top: 40px;
+			width: 100px;
+			height: 20px;
+			background: red;
+			content: "";
+		}
+	</style>
+</head>
+<body>
+	<div class="cross"></div>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.yin-yang {
+			position: relative;
+			width: 96px;
+			height: 48px;
+			background: #eee;
+			border-width: 2px 2px 50px 2px;
+			border-style: solid;
+			border-color: red;
+			border-radius: 100%;
+		}
+		.yin-yang:before {
+			position: absolute;
+			left: 0;
+			top: 50%;
+			width: 12px;
+			height: 12px;
+			background: #eee;
+			border: 18px solid red;
+			border-radius: 100%;
+			content: "";
+		}
+		.yin-yang:after {
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			width: 12px;
+			height: 12px;
+			background: red;
+			border: 18px solid #eee;
+			border-radius: 100%;
+			content: "";
+		}
+	</style>
+</head>
+<body>
+	<div class="yin-yang"></div>
+</body>
+</html>

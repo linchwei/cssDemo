@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.talk-bubble {
+			position: relative;
+			width: 120px;
+			height: 80px;
+			background: red;
+			border-radius: 10px;
+		}
+		.talk-bubble:before {
+			position: absolute;
+			right: 100%;
+			top: 26px;
+			width: 0;
+			height: 0;
+			border-top: 13px solid transparent;
+			border-right: 26px solid red;
+			border-bottom: 13px solid transparent;
+			content: "";
+		}
+	</style>
+</head>
+<body>
+	<div class="talk-bubble"></div>
+</body>
+</html>

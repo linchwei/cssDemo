@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.star-5 {
+			position: relative;
+			display: block;
+			width: 0;
+			height: 0;
+			margin: 50px 0;
+			content: yellowgreen;
+			border-right: 100px solid transparent;
+			border-bottom: 70px solid yellowgreen;
+			border-left: 100px solid transparent;
+			transform: rotate(35deg);
+		}
+		.star-5:before {
+			position: absolute;
+			top: -45px;
+			left: -65px;
+			display: block;
+			width: 0;
+			height: 0;
+			border-bottom: 80px solid yellowgreen;
+			border-left: 30px solid transparent;
+			border-right: 30px solid transparent;
+			transform: rotate(-35deg);
+			content: "";
+		}
+		.star-5:after {
+			position: absolute;
+			top: 3px;
+			left: -105px;
+			display: block;
+			width: 0;
+			height: 0;
+			color: yellowgreen;
+			border-right: 100px solid transparent;
+			border-bottom: 70px solid yellowgreen;
+			border-left: 100px solid transparent;
+			transform: rotate(-70deg);
+			content: "";
+		}
+	</style>
+</head>
+<body>
+	<div class="star-5"></div>
+</body>
+</html>

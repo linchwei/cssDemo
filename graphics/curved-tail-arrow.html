@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.curved-tail-arrow {
+			position: relative;
+			width: 0;
+			height: 0;
+			border-top: 9px solid transparent;
+			border-right: 9px solid yellowgreen;
+			transform: rotate(10deg);
+		}
+		.curved-tail-arrow:before {
+			position: absolute;
+			top: -12px;
+			left: -9px;
+			width: 12px;
+			height: 12px;
+			border: 0 solid transparent;
+			border-top: 3px solid yellowgreen;
+			border-radius: 20px 0 0 0;
+			transform: rotate(45deg);
+			content: "";
+		}
+	</style>
+</head>
+<body>
+	<div class="curved-tail-arrow"></div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.cut-diamond {
+			position: relative;
+			width: 50px;
+			height: 0;
+			margin: 20px 0 50px 0;
+			border-width: 0 25px 25px 25px;
+			border-style: solid;
+			border-color: transparent transparent red transparent;
+		}
+		.cut-diamond:after {
+			position: absolute;
+			left: -25px;
+			top: 25px;
+			width: 0;
+			height: 0;
+			border-width: 70px 50px 0 50px;
+			border-style: solid;
+			border-color: red transparent transparent transparent;
+			content: "";
+		}
+	</style>
+</head>
+<body>
+	<div class="cut-diamond"></div>
+</body>
+</html>

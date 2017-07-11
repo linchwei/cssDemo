@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.octagon {
+			position: relative;
+			width: 100px;
+			height: 100px;
+			background: yellowgreen;
+		}
+		.octagon:before {
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 42px;
+			height: 0;
+			border-bottom: 29px solid yellowgreen;
+			border-left: 29px solid #eee;
+			border-right: 29px solid #eee;
+			content: "";
+		}
+		.octagon:after {
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			width: 42px;
+			height: 0;
+			border-top: 29px solid yellowgreen;
+			border-left: 29px solid #eee;
+			border-right: 29px solid #eee;
+			content: "";
+		}
+	</style>
+</head>
+<body>
+	<div class="octagon"></div>
+</body>
+</html>

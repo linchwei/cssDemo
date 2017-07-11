@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.tv-screen {
+			position: relative;
+			width: 200px;
+			height: 150px;
+			margin: 20px 0;
+			background: red;
+			border-radius: 50% / 10%;
+			color: white;
+			text-align: center;
+			text-indent: 10px;
+		}
+		.tv-screen:before {
+			position: absolute;
+			left: -5%;
+			right: -5%;
+			top: 10%;
+			bottom: 10%;
+			background: inherit;
+			border-radius: 5% / 50%;
+			content: "";
+		}
+	</style>
+</head>
+<body>
+	<div class="tv-screen"></div>
+</body>
+</html>

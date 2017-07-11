@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.infinity {
+			position: relative;
+			width: 212px;
+			height: 100px;
+		}
+		.infinity:before,
+		.infinity:after {
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 60px;
+			height: 60px;
+			border: 20px solid red;
+			border-radius: 50px 50px 0 50px;
+			transform: rotate(-45deg);
+			content: "";
+		}
+		.infinity:after {
+			left: auto;
+			right: 0;
+			border-radius: 50px 50px 50px 0;
+			transform: rotate(45deg);
+		}
+	</style>
+</head>
+<body>
+	<div class="infinity"></div>
+</body>
+</html>

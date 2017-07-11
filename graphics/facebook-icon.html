@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.facebook-icon {
+			position: relative;
+			width: 100px;
+			height: 110px;
+			background: red;
+			border: 15px solid red;
+			border-bottom: 0;
+			border-radius: 5px;
+			text-indent: -999rem;
+			overflow: hidden;
+		}
+		.facebook-icon:before {
+			position: absolute;
+			right: -37px;
+			bottom: -30px;
+			width: 40px;
+			height: 90px;
+			background: red;
+			border: 20px solid #eee;
+			border-radius: 25px;
+			content: "/20";
+		}
+		.facebook-icon:after {
+			position: absolute;
+			right: 5px;
+			top: 50px;
+			width: 55px;
+			height: 20px;
+			background: #eee;
+			content: "/20";
+		}
+	</style>
+</head>
+<body>
+	<div class="facebook-icon"></div>
+</body>
+</html>

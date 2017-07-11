@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.chevron {
+			position: relative;
+			width: 200px;
+			height: 60px;
+			padding: 12px;
+			margin-bottom: 6px;
+			text-align: center;
+		}
+		.chevron:before {
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 51%;
+			height: 100%;
+			background: red;
+			transform: skew(0deg, 6deg);
+			content: "";
+		}
+		.chevron:after {
+			position: absolute;
+			right: 0;
+			top: 0;
+			width: 50%;
+			height: 100%;
+			background: red;
+			transform: skew(0deg, -6deg);
+			content: "";
+		}
+	</style>
+</head>
+<body>
+	<div class="chevron"></div>
+</body>
+</html>

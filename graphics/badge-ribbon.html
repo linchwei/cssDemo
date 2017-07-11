@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.badge-ribbon {
+			position: relative;
+			width: 100px;
+			height: 100px;
+			background: red;
+			border-radius: 50px;
+		}
+		.badge-ribbon:before,
+		.badge-ribbon:after {
+			position: absolute;
+			left: -10px;
+			top: 70px;
+			border-bottom: 70px solid red;
+			border-left: 40px solid transparent;
+			border-right: 40px solid transparent;
+			transform: rotate(-140deg);
+			content: "";
+		}
+		.badge-ribbon:after {
+			left: auto;
+			right: -10px;
+			transform: rotate(140deg);
+		}
+	</style>
+</head>
+<body>
+	<div class="badge-ribbon"></div>
+</body>
+</html>
