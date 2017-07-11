@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="full-screen" content="yes">
+  <meta name="x5-fullscreen" content="true">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+  	.spinner {
+  		width: 60px;
+  		height: 60px;
+  		background: #67cf22;
+  		margin: 100px auto;
+  		animation: rotateplane 1.2s infinite ease-in-out;
+  	}
+  	@keyframes rotateplane {
+  		0% {
+  			transform: perspective(120px);
+  		}
+  		50% {
+  			transform: perspective(120px) rotateY(180deg);
+  		}
+  		100% {
+  			transform: perspective(120px) rotateY(180deg) rotateX(180deg);
+  		}
+  	}
+  </style>
+ </head>
+ <body>
+ 	<div class="spinner"></div>
+ </body>
+ </html>

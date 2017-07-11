@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="full-screen" content="yes">
+  <meta name="x5-fullscreen" content="true">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+  	.spinner {
+  		position: relative;
+  		width: 90px;
+  		height: 90px;
+  		margin: 100px auto;
+  		text-align: center;
+  		animation: rotate 2.0s infinite linear;
+  	}
+  	.spinner .dot1,
+  	.spinner .dot2 {
+  		position: absolute;
+  		top: 0;
+  		display: inline-block;
+  		width: 60%;
+  		height: 60%;
+  		background: #67cf22;
+  		border-radius: 100%;
+  		animation: bounce 2.0s infinite ease-in-out;
+  	}
+  	.spinner .dot2 {
+  		top: auto;
+  		bottom: 0;
+  		animation-delay: -1.0s;
+  	}
+  	@keyframes rotate {
+  		100% {
+  			transform: rotate(360deg);
+  		}
+  	}
+  	@keyframes bounce {
+  		0%, 100% {
+  			transform: scale(0.0);
+  		}
+  		50% {
+  			transform: scale(1.0);
+  		}
+  	}
+  </style>
+</head>
+<body>
+	<div class="spinner">
+		<div class="dot1"></div>
+		<div class="dot2"></div>
+	</div>
+</body>
+</html>
